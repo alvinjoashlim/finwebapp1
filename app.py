@@ -15,11 +15,6 @@ def main():
 def prediction():
     return(render_template("prediction.html"))
 
-@app.route("/main",methods=["GET","POST"])
-def main():
-    q = float(request.form.get("q"))
-    return(render_template("main.html",r=(q*-50.6)+90.2))
-
 @app.route("/dbs_price",methods=["GET","POST"])
 def dbs_price():
     q = float(request.form.get("q"))

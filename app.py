@@ -5,7 +5,7 @@ import os
 
 flag = 1
 name = ""
-makersuite_api = os.getenv("MAKERSUITE_API_TOKEN)
+makersuite_api = os.getenv("MAKERSUITE_API_TOKEN")
 palm.configure(api_key=makersuite_api)
 
 model = {"model":"models/chat-bison-001"}
